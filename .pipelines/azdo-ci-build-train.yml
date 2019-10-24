@@ -16,7 +16,7 @@ variables:
 
 steps:
 
-template: azdo-base-pipeline.yml
+- template: azdo-base-pipeline.yml
 
 - bash: |
    # Invoke the Python building and publishing a training pipeline with Python on ML Compute

@@ -25,8 +25,8 @@ steps:
   inputs:
     azureSubscription: 'AzureResourceConnection'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: '$(BASE_NAME)-AML-RG'
-    location: $(LOCATION)
+    resourceGroupName: 'ccr-rg'
+    location: eastus2
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.SourcesDirectory)/environment_setup/arm-templates/cloud-environment.json'
     overrideParameters: '-baseName $(BASE_NAME) -location $(LOCATION)'
